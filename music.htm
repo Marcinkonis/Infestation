@@ -1,0 +1,201 @@
+<!doctype html> <!-- Copy pasted template from getbootstrap.com -->
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="lity-2.4.1/dist/lity.css" rel="stylesheet">
+	<link type="text/css" href="OverlayScrollbars/css/OverlayScrollbars.min.css" rel="stylesheet"/>
+	<script type="text/javascript">
+		function AsHammerToAnvil() {
+			lity('//www.youtube.com/watch?v=_Wt18kVomhg');
+		}
+		function Perversion() {
+			lity('//www.youtube.com/watch?v=DIdxH7tnL2A');
+		}
+		function SocialCannibalism() {
+			lity('//www.youtube.com/watch?v=6fb5cv4nC4A');
+		}
+	</script>
+
+	<title>Music · Infestation</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<main role="main" class="container clear-top">
+			<a href="index.htm">
+				<img class="pagelogo row mx-auto" width="261px" src="logo.jpg">
+			</a>
+
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark text-center mb-4"> 
+				<a class="navbar-brand ml-2 my-1" href="index.htm"> Infestation (LT)</a>
+
+				<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#suskleidziam" aria-controls="suskleidziam" aria-expanded="false" aria-label="Navigation"> <span class="navbar-toggler-icon"></span> </button>
+
+				<!-- Navigation (hamburger) content -->
+				<div class="collapse navbar-collapse" id=suskleidziam>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item mr-2"> <a class="nav-link" href="index.htm"> Home </a> </li>
+
+						<li class="nav-item mr-2 active"> <a class="nav-link" href="music.htm"> Music </a> </li>
+
+						<li class="nav-item mr-2"> <a class="nav-link" href="merch.htm"> Merch </a> </li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="container-fluid">
+				<div class="row mb-3">
+					<div class="col-xl-9 col-lg-8 col-md-7 text-center"><p><h5>Select your preferred platform and click on one of our releases to listen:</h5></p></div>
+
+					<div class="btn-group ml-auto col-xl-3 col-lg-4 col-md-5" role="group">
+						<button type="button" class="btn btn-secondary" id="YouTube">YouTube</button>
+						<button type="button" class="btn btn-secondary" id="Spotify">Spotify</button>
+						<button type="button" class="btn btn-secondary" id="Bandcamp">Bandcamp</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<a href="" class="card custom-card text-center text-white col-md-4">
+						<img class="card-img-top" src="albums/hammer.jpg">
+						<div class="card-body">
+							<p><h6>As Hammer To Anvil</h6></p>
+						</div>
+					</a>
+
+					<a href="" class="card custom-card text-center text-white col-md-4">
+						<img class="card-img-top" src="albums/perversion.jpg">
+						<div class="card-body">
+							<p><h6>Perversion</h6></p>
+						</div>
+					</a>
+					
+					<a href="" class="card custom-card text-center text-white col-md-4">
+						<img class="card-img-top" src="albums/cannibalism.jpg">
+						<div class="card-body">
+							<p><h6>Social Cannibalism</h6></p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-copyright py-2 text-center">
+			© Copyright 2020: Osmundas Marcinkonis
+		</div>
+	</footer>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<script src="lity-2.4.1/vendor/jquery.js"></script>
+	<script src="lity-2.4.1/dist/lity.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			var buttons = $('.btn.btn-secondary');
+			var albums = $('.card.custom-card');
+
+			//responsive links:
+			$('#YouTube').click(function () {
+				buttons.removeClass('Spotify');
+				buttons.removeClass('Bandcamp');
+				albums.removeClass('Spotify');
+				albums.removeClass('Bandcamp');
+				$(this).addClass('YouTube');
+				albums.addClass('YouTube');
+				$($(".card.custom-card")[0]).attr("href", "javascript:AsHammerToAnvil();");
+				$($(".card.custom-card")[1]).attr("href", "javascript:Perversion();");
+				$($(".card.custom-card")[2]).attr("href", "javascript:SocialCannibalism();");
+				setCookie('preference','0','7'); //(key,value,expiry in days)
+			});
+
+			$('#Spotify').click(function () {
+				buttons.removeClass('YouTube');
+				buttons.removeClass('Bandcamp');
+				albums.removeClass('YouTube');
+				albums.removeClass('Bandcamp');
+				$(this).addClass('Spotify');
+				albums.addClass('Spotify');
+				$($(".card.custom-card")[0]).attr("href", "https://www.spotify.com");
+				$($(".card.custom-card")[1]).attr("href", "https://www.spotify.com");
+				$($(".card.custom-card")[2]).attr("href", "https://www.spotify.com");
+				setCookie('preference','1','7');
+			});
+
+			$('#Bandcamp').click(function () {
+				buttons.removeClass('YouTube');
+				buttons.removeClass('Spotify');
+				albums.removeClass('YouTube');
+				albums.removeClass('Spotify');
+				$(this).addClass('Bandcamp');
+				albums.addClass('Bandcamp');
+				$($(".card.custom-card")[0]).attr("href", "https://www.bandcamp.com");
+				$($(".card.custom-card")[1]).attr("href", "https://www.bandcamp.com");
+				$($(".card.custom-card")[2]).attr("href", "https://www.bandcamp.com");
+				setCookie('preference','2','7');
+			});
+
+			function lity1() {
+				lity('//www.youtube.com/watch?v=_Wt18kVomhg');
+			}
+
+			//cookies:
+			function setCookie(key, value, expiry) {
+		        var expires = new Date();
+		        expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+		        document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+		    }
+
+		    function getCookie(key) {
+		        var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+		        return keyValue ? keyValue[2] : null;
+		    }
+
+		    function eraseCookie(key) {
+		        var keyValue = getCookie(key);
+		        setCookie(key, keyValue, '-1');
+		    }
+
+			function eventFire(el, etype){ // click simulation
+				if (el.fireEvent) {
+					el.fireEvent('on' + etype);
+				}
+				else {
+					var evObj = document.createEvent('Events');
+					evObj.initEvent(etype, true, false);
+					el.dispatchEvent(evObj);
+				}
+			}
+
+			var num = getCookie('preference');
+			if (num=='1') {eventFire(buttons[1], 'click');}
+			else if (num=='2') {eventFire(buttons[2], 'click');}
+			else {eventFire(buttons[0], 'click');}
+		});
+	</script>
+	
+	<script type="text/javascript" src="OverlayScrollbars/js/OverlayScrollbars.js"></script>
+	<script type="text/javascript">
+		(function($){
+			"use strict";
+			$('body').overlayScrollbars({
+				className: "os-theme-light",
+			})
+		})(jQuery)
+	</script>
+</body>
+</html>

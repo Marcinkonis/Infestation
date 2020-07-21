@@ -1,0 +1,13 @@
+SPACING
+https://getbootstrap.com/docs/4.0/utilities/spacing/#notation
+
+GRID FORMATTING
+https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php
+https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
+
+COMPONENTS, ETC.
+https://getbootstrap.com/docs/4.4/components/
+https://www.w3schools.com/bootstrap/
+
+FOOTER
+https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
