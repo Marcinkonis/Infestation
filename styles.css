@@ -5,19 +5,23 @@ html, body {
 }
 
 #wrap {
-  min-height: 100%;
-  padding-bottom: 62px;
-  padding-left: 3%;
-  padding-right: 3%;
+	min-height: 100%;
+	padding-bottom: 62px;
 }
 
 #main {
-  margin: auto;
+	margin: auto;
 }
 
 .pagelogo:hover {
 	animation: shake 0.5s; 
 	animation-iteration-count: infinite; 
+}
+
+@media(max-width:767px){
+	.row {
+		padding: 3% 3%;
+	}
 }
 
 .custombtn {
